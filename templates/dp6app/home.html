@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <h1>dp6app welcomes you to main page</h1>
+    <h1>{{pname}}</h1>
+    {% block content %}
+    <h1>welcome to child.html</h1>
+    <a href="{% url 'dp6app:child' %}">child</a>
+    <a href="{% url 'sample' %}">sample</a>
+    {% endblock %}
+</body>
+</html>

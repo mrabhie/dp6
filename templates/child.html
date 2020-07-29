@@ -1,0 +1,9 @@
+{% extends "dp6app/base.html" %}
+{% block title %}
+    <title>child.html</title>
+{% endblock title %}
+{% block content %}
+    <h1>welcome to child.html</h1>
+    <a href="{% url 'dp6app:home' %}">home</a>
+    <a href="{% url 'sample' %}">sample</a>
+{% endblock %}
